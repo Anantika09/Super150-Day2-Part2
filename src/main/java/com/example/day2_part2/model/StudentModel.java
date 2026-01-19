@@ -1,15 +1,16 @@
 package com.example.day2_part2.model;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-
 public class StudentModel {
     private int id;
     private String name;
     private String email;
     public StudentModel(){
 
+    }
+    public StudentModel(int id,String name,String email){
+        this.id=id;
+        this.name=name;
+        this.email=email;
     }
 
     public int getId() {
